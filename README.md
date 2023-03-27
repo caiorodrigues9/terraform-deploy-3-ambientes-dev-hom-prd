@@ -1,6 +1,6 @@
-#Atividade Final - Terraform
+Atividade Final - Terraform
 
-##Crie 3 Workspaces:
+Crie 3 Workspaces:
 	- Dev
 	- Hom
 	- Prd
@@ -12,9 +12,9 @@
 	rds-mysql-hom
 	rds-mysql-prd
 
-##Crie 1 Bucket S3 com o parecido com: terraform-state-files
+Crie 1 Bucket S3 com o parecido com: terraform-state-files
 
-##Criar um módulo terraform que crie de forma dinâmica:
+Criar um módulo terraform que crie de forma dinâmica:
 	###Network:
 		1 VPC; 
 		3 Subnets Privadas;
@@ -22,11 +22,11 @@
 		1 Nat Gateway;
 		1 Internet Gateway;
 
-	###Security groups (Utilizar Dynamic Block):
+	Security groups (Utilizar Dynamic Block):
 		1 SG para maquinas Web com as portas 80 e 443 abertas;
 		1 SG para bancos de dados abrindo a porta 3306 para o SG Web;
 
-	###Virtual Machines:
+	Virtual Machines:
 		5 Maquinas Virtuais - Web Publica: 
 			Ubuntu 22.04
 			Storage gp3 - 20GB
@@ -45,7 +45,7 @@
 			Com os seguintes pacotes instalados:
 				nginx
 				mysql-client
-	###Banco de Dados:
+	Banco de Dados:
 		1 Instancia de Banco de Dados RDS MySQL
 			Versão 8
 			Multi-AZ (Apenas em caso de ambiente produtivo)
